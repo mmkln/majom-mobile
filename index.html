@@ -14,9 +14,10 @@
     This is a placeholder for base href that will be replaced by the value of
     the `--base-href` argument provided to `flutter build`.
   -->
-  <base href="https://mmkln.github.io/majom-mobile/">
+  <base href="/">
 
   <meta charset="UTF-8">
+  <meta name="flutter-web-renderer" content="html">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
 
@@ -28,6 +29,14 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Load font supporting Cyrillic characters -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap&subset=cyrillic,latin" rel="stylesheet">
+  <style>
+    html, body, flt-glass-pane { font-family: 'Noto Sans', sans-serif; }
+  </style>
 
   <title>platform_mobile</title>
   <link rel="manifest" href="manifest.json">
